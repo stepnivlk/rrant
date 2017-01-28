@@ -1,4 +1,4 @@
-require "spec_helper"
+require 'spec_helper'
 require 'rrant_helper'
 
 describe Rrant::Local do
@@ -31,10 +31,10 @@ describe Rrant::Local do
 
       it 'returns placeholder when there are no rants in the store' do
         expect(local.random).to \
-          include({ 'text' => 'No rants available :/' })
+          include(RrantHelper.fake_placeholder)
       end
 
-      it 'returns placeholder when unseen is set and there are no other rants' do
+      it 'returns placeholder when unseen=true and there are no other rants' do
         store.add([RrantHelper.fake_rant(1, true)])
         local.unseen(true)
         expect(local.random).to \
