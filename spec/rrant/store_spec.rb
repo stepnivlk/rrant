@@ -3,23 +3,26 @@ require 'rrant_helper'
 
 describe Rrant::Store do
   context 'correct path given' do
-    let(:root_path) { "#{RrantHelper.root_path}/.rrant" }
+    let(:root_path) { RrantHelper.root_path }
     let(:store) { described_class.new(RrantHelper.root_path) }
+    let(:rrant_path) { root_path + '/.rrant' }
+    let(:store_path) { root_path + '/.rrant/store.pstore' }
+    let(:images_path) { root_path + '/.rrant/images/' }
 
     after(:all) do
-      RrantHelper::delete_root_path
+      RrantHelper.delete_root_path
     end
 
     it "creates directory structure with store file" do
       store
-      expect(Dir.exist?(root_path)).to eq(true)
-      expect(Dir.exist?(root_path + '/images')).to eq(true)
-      expect(File.exist?(root_path + '/store.pstore')).to eq(true)
+      expect(Dir.exist?(rrant_path)).to eq(true)
+      expect(Dir.exist?(images_path)).to eq(true)
+      expect(File.exist?(store_path)).to eq(true)
     end
 
     it 'populate its readers' do
-      expect(store.root).to eq(root_path)
-      expect(store.images).to eq(root_path + '/images/')
+      expect(store.root).to eq(rrant_path)
+      expect(store.images).to eq(images_path)
       expect(store.store).to be_instance_of(PStore)
     end
 

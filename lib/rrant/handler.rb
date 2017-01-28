@@ -13,7 +13,7 @@ module Rrant
 
     def rave
       rant = local.unseen(@unseen).random
-      Output.new(rant, @store.images, @show_images)
+      Output.new(rant, @show_images)
     end
 
     def dos

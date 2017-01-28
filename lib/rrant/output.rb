@@ -2,9 +2,8 @@ require 'catpix'
 
 module Rrant
   class Output
-    def initialize(rant, images, show_images)
+    def initialize(rant, show_images)
       @rant = rant
-      @images = images
       @show_images = show_images
     end
 
@@ -23,8 +22,10 @@ module Rrant
       return unless @show_images
       return unless @rant['image']
 
-      path = @images + @rant['image']
-      Catpix::print_image(path, resolution: 'low', limit_x: 0.5, limit_y: 0.5)
+      Catpix::print_image(@rant['image'],
+                          resolution: 'low',
+                          limit_x: 0.4,
+                          limit_y: 0.4)
     end
   end
 end

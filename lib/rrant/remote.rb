@@ -1,6 +1,7 @@
 require 'httparty'
 require 'open-uri'
 require 'rrant/helper'
+require 'rrant/error'
 
 module Rrant
   class Remote
@@ -12,13 +13,16 @@ module Rrant
     MAX_CYCLE = 10
     SLEEP = 0.4
 
-    def initialize(store)
+    def initialize(store, skip_images = true)
+      raise Error::InvalidStore unless store.is_a?(Store)
+
       @rants = []
       @store = store
+      @skip_images = skip_images
     end
 
-    def save(amount = 10)
-      @amount = amount
+    def save(min_amount = 10)
+      @min_amount = min_amount
       build_rants
       fetch_images
       @store.add(@rants)
@@ -36,7 +40,7 @@ module Rrant
     end
 
     def build_allowed?
-      ->(cycle) { @rants.size < @amount && cycle < MAX_CYCLE }
+      ->(cycle) { @rants.size < @min_amount && cycle < MAX_CYCLE }
     end
 
     def filter_rants
@@ -53,6 +57,8 @@ module Rrant
     end
 
     def fetch_images
+      return unless @skip_images
+
       @rants.each do |rant|
         next if image_blank?(rant)
         fetch_image(rant)
@@ -61,8 +67,6 @@ module Rrant
     end
 
     def fetch_image(rant)
-      return if image_blank?(rant)
-
       url = rant['attached_image']['url']
       download = open(url)
       path = @store.images + url.split('/')[-1]

@@ -1,5 +1,9 @@
+require 'rrant/helper'
+
 module Rrant
   class Local
+    include Helper
+
     def initialize(store)
       @unseen = false
       @store = store
@@ -7,10 +11,10 @@ module Rrant
 
     def random
       return placeholder if @store.empty?
-      rant = pick_random.tap { |rant| @store.touch(rant['id']) }
+      rant = pick_random
       return placeholder unless rant
 
-      rant
+      rant.tap { |r| @store.touch(r['id']) }
     end
 
     def unseen(set)
@@ -27,7 +31,8 @@ module Rrant
     end
 
     def placeholder
-      { 'text' => 'No rants available :/', 'image' => 'devrant.png' }
+      { 'text' => 'No rants available :/',
+        'image' => "#{files_path}/devrant.png" }
     end
   end
 end
