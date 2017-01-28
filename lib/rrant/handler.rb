@@ -1,16 +1,19 @@
 require 'rrant/local'
 require 'rrant/remote'
 require 'rrant/store'
+require 'rrant/output'
 
 module Rrant
   class Handler
     def initialize(options = nil)
       @options = options || Hash.new(false)
       @store = Store.new
+      @show_images = true
     end
 
     def rave
-      local.unseen(@unseen).random
+      rant = local.unseen(@unseen).random
+      Output.new(rant, @store.images, @show_images)
     end
 
     def dos
@@ -22,13 +25,13 @@ module Rrant
       self
     end
 
-    def unseen(visible = true)
-      @unseen = visible
+    def with_images(set = true)
+      @show_images = set
       self
     end
 
-    def delete(due_date = 30)
-      @due_date = due_date
+    def unseen(set = true)
+      @unseen = set
       self
     end
 

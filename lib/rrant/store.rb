@@ -1,9 +1,16 @@
+require 'pstore'
+require 'rrant/error'
+
 module Rrant
   class Store
     attr_reader :root, :images, :store
 
     def initialize(path = nil)
-      @root = "#{path || Dir.home}/.rrant"
+      path = path || Dir.home
+
+      raise Error::InvalidPath unless Dir.exist?(path)
+
+      @root = "#{path}/.rrant"
       @images = "#{@root}/images/"
 
       initialize_directories
@@ -15,6 +22,10 @@ module Rrant
         @store[:ids] += build_ids(rants)
         @store[:entities] += build_entities(rants)
       end
+    end
+
+    def empty?
+      ids.empty?
     end
 
     %i(ids entities).each do |bucket|
@@ -46,7 +57,14 @@ module Rrant
       rant.tap do |injected|
         injected['created_at'] = DateTime.now
         injected['viewed_at'] = nil
+        injected['image'] = image_for(injected)
       end
+    end
+
+    def image_for(rant)
+      return nil if rant['attached_image'] == ''
+
+      rant['attached_image']['url'].split('/')[-1]
     end
 
     def initialize_store

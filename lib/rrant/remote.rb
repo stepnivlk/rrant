@@ -1,3 +1,6 @@
+require 'httparty'
+require 'open-uri'
+
 module Rrant
   class Remote
     attr_reader :rants
@@ -14,6 +17,7 @@ module Rrant
     def save(amount = 10)
       @amount = amount
       build_rants
+      fetch_images
       @store.add(@rants)
     end
 
@@ -45,12 +49,20 @@ module Rrant
       @rants += response['rants']
     end
 
+    def fetch_images
+      @rants.each do |rant|
+        fetch_image(rant)
+        sleep SLEEP
+      end
+    end
+
     def fetch_image(rant)
       return if rant['attached_image'] == ''
 
       url = rant['attached_image']['url']
       download = open(url)
-      IO.copy_stream(download, url.split('/')[-1])
+      path = @store.images + url.split('/')[-1]
+      IO.copy_stream(download, path)
     end
 
     def build_url(skip, sort)

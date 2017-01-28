@@ -15,13 +15,4 @@ describe Rrant::Handler do
   it 'returns self when receives unseen' do
     expect(store.unseen).to eq(store)
   end
-
-  it 'sets log when receives log' do
-    store.log
-    expect(store.instance_variable_get(:@log)).to eq(true)
-  end
-
-  it 'returns self when receives log' do
-    expect(store.log).to eq(store)
-  end
 end
