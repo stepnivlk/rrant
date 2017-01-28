@@ -22,10 +22,10 @@ module Rrant
       return unless @show_images
       return unless @rant['image']
 
-      Catpix::print_image(@rant['image'],
-                          resolution: 'low',
-                          limit_x: 0.4,
-                          limit_y: 0.4)
+      Catpix.print_image(@rant['image'],
+                         resolution: 'low',
+                         limit_x: 0.4,
+                         limit_y: 0.4)
     end
   end
 end
