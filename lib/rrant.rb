@@ -2,7 +2,7 @@ require 'rrant/version'
 require 'rrant/handler'
 
 module Rrant
-  def self.and(options = {})
-    Handler.new(options = nil)
+  def self.and
+    Handler.new
   end
 end

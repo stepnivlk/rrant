@@ -5,8 +5,7 @@ require 'rrant/output'
 
 module Rrant
   class Handler
-    def initialize(options = nil)
-      @options = options || Hash.new(false)
+    def initialize
       @store = Store.new
       @show_images = true
     end

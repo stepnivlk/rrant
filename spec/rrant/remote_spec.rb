@@ -28,6 +28,7 @@ describe Rrant::Remote do
   context 'correct store given, with images' do
     let(:store) { Rrant::Store.new(RrantHelper.root_path) }
     let(:remote) { described_class.new(store) }
+    let(:all_images_path) { RrantHelper.root_path + '/.rrant/images/*' }
 
     after(:all) do
       RrantHelper.delete_root_path
@@ -41,6 +42,9 @@ describe Rrant::Remote do
       expect(remote.rants.size).to be >= 10
       expect(store.ids.size).to eq(remote.rants.size)
       expect(store.entities.size).to eq(remote.rants.size)
+
+      saved_images = Dir[all_images_path]
+      expect(saved_images.size).to be > 0
     end
   end
 
