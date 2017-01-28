@@ -4,9 +4,7 @@ require 'rrant_helper'
 describe Rrant::Output do
   context '#in' do
     let(:rant) { RrantHelper.fake_rant(1, false, true) }
-    let(:output_obj) {
-      described_class.new(rant, false)
-    }
+    let(:output_obj) { described_class.new(rant, false) }
 
     it 'returns rant as a hash' do
       expect(output_obj.in).to include(rant)
