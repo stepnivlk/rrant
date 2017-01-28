@@ -13,9 +13,7 @@ describe Rrant::Output do
 
   context '#out without image' do
     let(:rant) { RrantHelper.fake_rant(1, false, true) }
-    let(:output_obj) {
-      described_class.new(rant, false)
-    }
+    let(:output_obj) { described_class.new(rant, false) }
 
     it 'puts rant and image to STDOUT' do
       expect(STDOUT).to receive(:puts).with(rant['text'])
@@ -25,9 +23,7 @@ describe Rrant::Output do
 
   context '#out with image' do
     let(:rant) { RrantHelper.fake_rant(1, false, true) }
-    let(:output_obj) {
-      described_class.new(rant, true)
-    }
+    let(:output_obj) { described_class.new(rant, true) }
 
     it 'puts rant and image to STDOUT' do
       28.times { expect(STDOUT).to receive(:puts) }
