@@ -1,5 +1,5 @@
 module Rrant
-  class Cache
+  class Local
     def initialize(offline = false)
       @offline = offline
       @order = :algo

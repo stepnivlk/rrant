@@ -1,4 +1,4 @@
-require 'rrant/cache'
+require 'rrant/local'
 require 'rrant/remote'
 require 'rrant/store'
 

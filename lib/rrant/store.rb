@@ -6,13 +6,13 @@ module Rrant
       @root = "#{path || Dir.home}/.rrant"
       @images = "#{@root}/images/"
 
-      bootstrap_directories
-      bootstrap_store
+      initialize_directories
+      initialize_store
     end
 
     def add(rants)
       @store.transaction do
-        @store[:ids] = @store[:ids] + rants.map { |rant| rant['id'] }
+        @store[:ids] = @store[:ids] + build_ids(rants)
         @store[:entities] = @store[:entities] + rants
       end
     end
@@ -27,23 +27,30 @@ module Rrant
 
     private
 
-    def bootstrap_store
-      @store = PStore.new("#{@root}/store.pstore")
-      !ids && bootstrap_ids
-      !entities && bootstrap_entities
+    def build_ids(rants)
+      rants.map { |rant| rant['id'] }
     end
 
-    def bootstrap_ids
+    def build_entities(rants)
+    end
+
+    def initialize_store
+      @store = PStore.new("#{@root}/store.pstore")
+      !ids && initialize_ids
+      !entities && initialize_entities
+    end
+
+    def initialize_ids
       @store.transaction { @store[:ids] = [] }
     end
 
-    def bootstrap_entities
+    def initialize_entities
       @store.transaction { @store[:entities] = [] }
     end
 
-    def bootstrap_directories
-      Dir.mkdir(@root) unless Dir.exists?(@root)
-      Dir.mkdir(@images) unless Dir.exists?(@images)
+    def initialize_directories
+      Dir.mkdir(@root) unless Dir.exist?(@root)
+      Dir.mkdir(@images) unless Dir.exist?(@images)
     end
   end
 end
