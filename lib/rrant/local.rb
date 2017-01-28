@@ -1,12 +1,15 @@
 require 'rrant/helper'
+require 'rrant/error'
 
 module Rrant
   class Local
     include Helper
 
     def initialize(store)
-      @unseen = false
+      raise Error::InvalidStore unless store.is_a?(Store)
+
       @store = store
+      @unseen = false
     end
 
     def random

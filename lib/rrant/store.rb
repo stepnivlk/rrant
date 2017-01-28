@@ -69,7 +69,7 @@ module Rrant
     def inject_rant(rant)
       rant.tap do |injected|
         injected['created_at'] = DateTime.now
-        injected['viewed_at'] = nil
+        injected['viewed_at'] = injected['viewed_at'] || nil
         injected['image'] = image_for(injected)
       end
     end
