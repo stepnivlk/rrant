@@ -4,7 +4,7 @@ module RrantHelper
   end
 
   def self.delete_root_path
-    FileUtils.rm_rf(root_path)
+    FileUtils.rm_rf(root_path + '/.rrant')
   end
 
   def self.fake_rant(id)

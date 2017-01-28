@@ -47,6 +47,17 @@ module Rrant
 
     private
 
+    def initialize_directories
+      Dir.mkdir(@root) unless Dir.exist?(@root)
+      Dir.mkdir(@images) unless Dir.exist?(@images)
+    end
+
+    def initialize_store
+      @store = PStore.new("#{@root}/store.pstore")
+      !ids && initialize_ids
+      !entities && initialize_entities
+    end
+
     def build_ids(rants)
       rants.map { |rant| rant['id'] }
     end
@@ -66,24 +77,13 @@ module Rrant
     def image_for(rant)
       return nil if image_blank?(rant)
 
-      rant['attached_image']['url'].split('/')[-1]
-    end
-
-    def initialize_store
-      @store = PStore.new("#{@root}/store.pstore")
-      !ids && initialize_ids
-      !entities && initialize_entities
+      @images + rant['attached_image']['url'].split('/')[-1]
     end
 
     %i(ids entities).each do |bucket|
       define_method("initialize_#{bucket}") do
         @store.transaction { @store[bucket] = [] }
       end
-    end
-
-    def initialize_directories
-      Dir.mkdir(@root) unless Dir.exist?(@root)
-      Dir.mkdir(@images) unless Dir.exist?(@images)
     end
   end
 end
