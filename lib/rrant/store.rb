@@ -1,49 +1,87 @@
+require 'pstore'
+require 'rrant/error'
+
 module Rrant
   class Store
     attr_reader :root, :images, :store
 
     def initialize(path = nil)
-      @root = "#{path || Dir.home}/.rrant"
+      path = path || Dir.home
+
+      raise Error::InvalidPath unless Dir.exist?(path)
+
+      @root = "#{path}/.rrant"
       @images = "#{@root}/images/"
 
-      bootstrap_directories
-      bootstrap_store
+      initialize_directories
+      initialize_store
     end
 
     def add(rants)
       @store.transaction do
-        @store[:ids] = @store[:ids] + rants.map { |rant| rant['id'] }
-        @store[:entities] = @store[:entities] + rants
+        @store[:ids] += build_ids(rants)
+        @store[:entities] += build_entities(rants)
       end
     end
 
-    def ids
-      @store.transaction { @store[:ids] }
+    def empty?
+      ids.empty?
     end
 
-    def entities
-      @store.transaction { @store[:entities] }
+    %i(ids entities).each do |bucket|
+      define_method(bucket) do
+        @store.transaction { @store[bucket] }
+      end
+    end
+
+    def touch(rant_id)
+      @store.transaction do
+        @store[:entities] = @store[:entities].map do |rant|
+          rant['viewed_at'] = DateTime.now if rant['id'] == rant_id
+          rant
+        end
+      end
     end
 
     private
 
-    def bootstrap_store
+    def build_ids(rants)
+      rants.map { |rant| rant['id'] }
+    end
+
+    def build_entities(rants)
+      rants.map { |rant| inject_rant(rant) }
+    end
+
+    def inject_rant(rant)
+      rant.tap do |injected|
+        injected['created_at'] = DateTime.now
+        injected['viewed_at'] = nil
+        injected['image'] = image_for(injected)
+      end
+    end
+
+    def image_for(rant)
+      return nil if rant['attached_image'] == ''
+
+      rant['attached_image']['url'].split('/')[-1]
+    end
+
+    def initialize_store
       @store = PStore.new("#{@root}/store.pstore")
-      !ids && bootstrap_ids
-      !entities && bootstrap_entities
+      !ids && initialize_ids
+      !entities && initialize_entities
     end
 
-    def bootstrap_ids
-      @store.transaction { @store[:ids] = [] }
+    %i(ids entities).each do |bucket|
+      define_method("initialize_#{bucket}") do
+        @store.transaction { @store[bucket] = [] }
+      end
     end
 
-    def bootstrap_entities
-      @store.transaction { @store[:entities] = [] }
-    end
-
-    def bootstrap_directories
-      Dir.mkdir(@root) unless Dir.exists?(@root)
-      Dir.mkdir(@images) unless Dir.exists?(@images)
+    def initialize_directories
+      Dir.mkdir(@root) unless Dir.exist?(@root)
+      Dir.mkdir(@images) unless Dir.exist?(@images)
     end
   end
 end

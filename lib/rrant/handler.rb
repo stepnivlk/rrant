@@ -1,20 +1,23 @@
-require 'rrant/cache'
+require 'rrant/local'
 require 'rrant/remote'
 require 'rrant/store'
+require 'rrant/output'
 
 module Rrant
   class Handler
     def initialize(options = nil)
       @options = options || Hash.new(false)
       @store = Store.new
+      @show_images = true
     end
 
     def rave
-      cache.unseen(@unseen).random
+      rant = local.unseen(@unseen).random
+      Output.new(rant, @store.images, @show_images)
     end
 
-    def dos(sort = :algo, amount = 10)
-      Thread.new { remote.fetch(sort, amount) }
+    def dos
+      Thread.new { remote.save }
       self
     end
 
@@ -22,18 +25,13 @@ module Rrant
       self
     end
 
-    def unseen
-      @unseen = true
+    def with_images(set = true)
+      @show_images = set
       self
     end
 
-    def log
-      @log = true
-      self
-    end
-
-    def delete(due_date = 30)
-      @format = due_date
+    def unseen(set = true)
+      @unseen = set
       self
     end
 
@@ -43,8 +41,8 @@ module Rrant
       @remote ||= Remote.new(@store)
     end
 
-    def cache
-      @cache ||= Cache.new(@store)
+    def local
+      @local ||= Local.new(@store)
     end
   end
 end
