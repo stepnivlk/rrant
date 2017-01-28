@@ -32,8 +32,8 @@ describe Rrant::Store do
 
   context 'invalid path given' do
     it 'raises exception' do
-      expect { described_class.new('invalidpath') }
-        .to raise_error(Rrant::Error::InvalidPath)
+      expect { described_class.new('invalidpath') }.to \
+        raise_error(Rrant::Error::InvalidPath)
     end
   end
 end
