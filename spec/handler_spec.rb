@@ -1,7 +1,7 @@
 require "spec_helper"
 
-describe Rrant::Store do
-  let (:store) { described_class.new }
+describe Rrant::Handler do
+  let(:store) { described_class.new }
 
   it 'returns self when receives and' do
     expect(store.and).to eq(store)
