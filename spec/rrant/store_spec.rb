@@ -1,11 +1,10 @@
 require "spec_helper"
 require 'rrant_helper'
-require 'rrant/error'
 
 describe Rrant::Store do
   context 'correct path given' do
-    let(:root_path) { "#{RrantHelper::root_path}/.rrant" }
-    let(:store) { described_class.new(RrantHelper::root_path) }
+    let(:root_path) { "#{RrantHelper.root_path}/.rrant" }
+    let(:store) { described_class.new(RrantHelper.root_path) }
 
     after(:all) do
       RrantHelper::delete_root_path
@@ -30,20 +29,20 @@ describe Rrant::Store do
     end
 
     it '#add rants to the store with additional data' do
-      store.add([RrantHelper::fake_rant(1)])
+      store.add([RrantHelper.fake_rant(1)])
       expect(store.empty?).to eq(false)
       expect(store.ids).to include(1)
 
       first = store.entities[0]
       keys = %w(created_at viewed_at image)
 
-      expect(first).to include(RrantHelper::fake_rant(1))
+      expect(first).to include(RrantHelper.fake_rant(1))
       expect(first.keys).to include(*keys)
       expect(first['created_at']).to be_instance_of(DateTime)
     end
 
     it '#touch rant with given ID by setting viewed_at' do
-      store.add([RrantHelper::fake_rant(2)])
+      store.add([RrantHelper.fake_rant(2)])
       store.touch(2)
 
       rant = store.entities.detect { |r| r['id'] == 2 }

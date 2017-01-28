@@ -1,8 +1,11 @@
 require 'httparty'
 require 'open-uri'
+require 'rrant/helper'
 
 module Rrant
   class Remote
+    include Helper
+
     attr_reader :rants
 
     BASE_URL = 'https://www.devrant.io/api/devrant/rants?app=3'
@@ -51,13 +54,14 @@ module Rrant
 
     def fetch_images
       @rants.each do |rant|
+        next if image_blank?(rant)
         fetch_image(rant)
         sleep SLEEP
       end
     end
 
     def fetch_image(rant)
-      return if rant['attached_image'] == ''
+      return if image_blank?(rant)
 
       url = rant['attached_image']['url']
       download = open(url)

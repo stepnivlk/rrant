@@ -13,9 +13,6 @@ module Rrant
       rant
     end
 
-    def top
-    end
-
     def unseen(set)
       @unseen = set
       self

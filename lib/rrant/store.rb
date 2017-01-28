@@ -1,8 +1,11 @@
 require 'pstore'
 require 'rrant/error'
+require 'rrant/helper'
 
 module Rrant
   class Store
+    include Helper
+
     attr_reader :root, :images, :store
 
     def initialize(path = nil)
@@ -61,7 +64,7 @@ module Rrant
     end
 
     def image_for(rant)
-      return nil if rant['attached_image'].nil? || rant['attached_image'] == ''
+      return nil if image_blank?(rant)
 
       rant['attached_image']['url'].split('/')[-1]
     end
