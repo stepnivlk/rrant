@@ -28,6 +28,28 @@ describe Rrant::Store do
       expect(store.ids).to eq([])
       expect(store.entities).to eq([])
     end
+
+    it '#add rants to the store with additional data' do
+      store.add([RrantHelper::fake_rant(1)])
+      expect(store.empty?).to eq(false)
+      expect(store.ids).to include(1)
+
+      first = store.entities[0]
+      keys = ['created_at', 'viewed_at', 'image']
+
+      expect(first).to include(RrantHelper::fake_rant(1))
+      expect(first.keys).to include(*keys)
+      expect(first['created_at']).to be_instance_of(DateTime)
+    end
+
+    it '#touch rant with given ID by setting viewed_at' do
+      store.add([RrantHelper::fake_rant(2)])
+      store.touch(2)
+
+      rant = store.entities.find { |r| r['id'] == 2 }
+      expect(rant['viewed_at']).to_not be_nil
+      expect(rant['viewed_at']).to be_instance_of(DateTime)
+    end
   end
 
   context 'invalid path given' do

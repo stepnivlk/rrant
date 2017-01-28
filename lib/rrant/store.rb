@@ -7,7 +7,6 @@ module Rrant
 
     def initialize(path = nil)
       path = path || Dir.home
-
       raise Error::InvalidPath unless Dir.exist?(path)
 
       @root = "#{path}/.rrant"
@@ -62,7 +61,7 @@ module Rrant
     end
 
     def image_for(rant)
-      return nil if rant['attached_image'] == ''
+      return nil if rant['attached_image'].nil? || rant['attached_image'] == ''
 
       rant['attached_image']['url'].split('/')[-1]
     end
