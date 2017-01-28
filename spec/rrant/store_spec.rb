@@ -35,7 +35,7 @@ describe Rrant::Store do
       expect(store.ids).to include(1)
 
       first = store.entities[0]
-      keys = ['created_at', 'viewed_at', 'image']
+      keys = %w(created_at viewed_at image)
 
       expect(first).to include(RrantHelper::fake_rant(1))
       expect(first.keys).to include(*keys)
@@ -46,7 +46,7 @@ describe Rrant::Store do
       store.add([RrantHelper::fake_rant(2)])
       store.touch(2)
 
-      rant = store.entities.find { |r| r['id'] == 2 }
+      rant = store.entities.detect { |r| r['id'] == 2 }
       expect(rant['viewed_at']).to_not be_nil
       expect(rant['viewed_at']).to be_instance_of(DateTime)
     end
