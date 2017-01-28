@@ -1,10 +1,25 @@
 module Rrant
   class Remote
-    def initialize
-      @remote = nil
+    attr_reader :rants
+
+    def initialize(store)
+      @store = store
+      @stored_ids = @store.ids
     end
 
-    def fetch
+    def save
+      fetch_rants
+      filter_rants
+      @store.add(@rants)
+    end
+
+    def filter_rants
+      @rants = @rants.reject do |rant|
+        @stored_ids.include?(rant['id'])
+      end
+    end
+
+    def fetch_rants
       response = HTTParty.get('https://www.devrant.io/api/devrant/rants?app=3&sort=algo')
       @rants = response['rants']
     end

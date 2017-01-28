@@ -1,5 +1,5 @@
 require 'rrant/version'
-require 'rrant/store'
+require 'rrant/handler'
 require 'httparty'
 require 'catpix'
 require 'pstore'
@@ -7,6 +7,6 @@ require 'open-uri'
 
 module Rrant
   def self.and(options = {})
-    Store.new(options = nil)
+    Handler.new(options = nil)
   end
 end
