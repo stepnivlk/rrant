@@ -5,9 +5,9 @@ describe Rrant::Store do
   context 'correct path given' do
     let(:root_path) { RrantHelper.root_path }
     let(:store) { described_class.new(RrantHelper.root_path) }
-    let(:rrant_path) { root_path + '/.rrant'}
-    let(:store_path) { root_path + '/.rrant/store.pstore'}
-    let(:images_path) { root_path + '/.rrant/images/'}
+    let(:rrant_path) { root_path + '/.rrant' }
+    let(:store_path) { root_path + '/.rrant/store.pstore' }
+    let(:images_path) { root_path + '/.rrant/images/' }
 
     after(:all) do
       RrantHelper.delete_root_path

@@ -14,7 +14,7 @@ module Rrant
       rant = pick_random
       return placeholder unless rant
 
-      rant.tap { |rant| @store.touch(rant['id']) }
+      rant.tap { |r| @store.touch(r['id']) }
     end
 
     def unseen(set)
