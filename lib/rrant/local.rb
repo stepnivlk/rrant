@@ -1,43 +1,29 @@
 module Rrant
   class Local
-    def initialize(offline = false)
-      @offline = offline
-      @order = :algo
-      @cache = PStore.new('store.pstore')
+    def initialize(store)
+      @unseen = false
+      @store = store
     end
 
     def random
+      pick_random.tap { |rant| @store.touch(rant['id']) }
     end
 
-    def find(id)
-      rant = find_cached(id)
-      return rant if @offline
+    def pick_random
+      return @store.entities.sample unless @unseen
 
-      !rant && @remote.find(id)
+      @store
+        .entities
+        .reject { |rant| rant['viewed_at'] != nil }
+        .sample
     end
 
-    def list(amount)
+    def top
     end
 
     def unseen(set)
       @unseen = set
       self
-    end
-
-    def order(sort)
-      @order = sort
-      self
-    end
-
-    def with(remote)
-      @remote = remote unless @offline
-      self
-    end
-
-    def find_cached(id)
-      @cache.transaction do
-        @cache[:rants].find { |rant| rant['id'] == id }
-      end
     end
   end
 end

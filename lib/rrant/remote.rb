@@ -2,33 +2,33 @@ module Rrant
   class Remote
     attr_reader :rants
 
+    BASE_URL = 'https://www.devrant.io/api/devrant/rants?app=3'
     MAX_CYCLE = 10
-    SLEEP = 0.2
+    SLEEP = 0.4
 
-    def initialize(store, amount = MAX_CYCLE)
+    def initialize(store)
       @rants = []
       @store = store
-      @amount = amount
     end
 
-    def save
+    def save(amount = 10)
+      @amount = amount
       build_rants
       @store.add(@rants)
     end
 
-    # private
+    private
 
     def build_rants(cycle = 0)
       fetch_rants(cycle)
       filter_rants
-      p @rants
       sleep SLEEP
-      return unless fetch_allowed?.call(cycle)
+      return unless build_allowed?.call(cycle)
 
       build_rants(cycle + 1)
     end
 
-    def fetch_allowed?
+    def build_allowed?
       ->(cycle) { @rants.size < @amount && cycle < MAX_CYCLE }
     end
 
@@ -40,11 +40,9 @@ module Rrant
       end
     end
 
-    def fetch_rants(skip = 0)
-      p skip
-      skip = skip == 0 ? '' : "&skip=#{skip * 20}"
-      response = HTTParty.get("https://www.devrant.io/api/devrant/rants?app=3&sort=algo#{skip}")
-      @rants = @rants + response['rants']
+    def fetch_rants(skip = 0, sort = :algo)
+      response = HTTParty.get(build_url(skip, sort))
+      @rants += response['rants']
     end
 
     def fetch_image(rant)
@@ -53,6 +51,13 @@ module Rrant
       url = rant['attached_image']['url']
       download = open(url)
       IO.copy_stream(download, url.split('/')[-1])
+    end
+
+    def build_url(skip, sort)
+      BASE_URL.tap do |url|
+        skip != 0 && url << "&skip=#{skip * 20}"
+        url << "&sort=#{sort}"
+      end
     end
   end
 end

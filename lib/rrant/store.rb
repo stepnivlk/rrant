@@ -12,17 +12,24 @@ module Rrant
 
     def add(rants)
       @store.transaction do
-        @store[:ids] = @store[:ids] + build_ids(rants)
-        @store[:entities] = @store[:entities] + rants
+        @store[:ids] += build_ids(rants)
+        @store[:entities] += build_entities(rants)
       end
     end
 
-    def ids
-      @store.transaction { @store[:ids] }
+    %i(ids entities).each do |bucket|
+      define_method(bucket) do
+        @store.transaction { @store[bucket] }
+      end
     end
 
-    def entities
-      @store.transaction { @store[:entities] }
+    def touch(rant_id)
+      @store.transaction do
+        @store[:entities] = @store[:entities].map do |rant|
+          rant['viewed_at'] = DateTime.now if rant['id'] == rant_id
+          rant
+        end
+      end
     end
 
     private
@@ -32,6 +39,14 @@ module Rrant
     end
 
     def build_entities(rants)
+      rants.map { |rant| inject_rant(rant) }
+    end
+
+    def inject_rant(rant)
+      rant.tap do |injected|
+        injected['created_at'] = DateTime.now
+        injected['viewed_at'] = nil
+      end
     end
 
     def initialize_store
@@ -40,12 +55,10 @@ module Rrant
       !entities && initialize_entities
     end
 
-    def initialize_ids
-      @store.transaction { @store[:ids] = [] }
-    end
-
-    def initialize_entities
-      @store.transaction { @store[:entities] = [] }
+    %i(ids entities).each do |bucket|
+      define_method("initialize_#{bucket}") do
+        @store.transaction { @store[bucket] = [] }
+      end
     end
 
     def initialize_directories
