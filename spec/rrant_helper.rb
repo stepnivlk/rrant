@@ -9,7 +9,9 @@ module RrantHelper
 
   def self.fake_rant(id, viewed = false, image = false)
     rant = { 'id' => id,
-             'text' => '640kb should be enough' }
+             'text' => '640kb should be enough',
+             'user_username' => 'bill',
+             'score' => 640 }
     image_path = File.expand_path('../files/bill.jpg', File.dirname(__FILE__))
 
     rant.tap do |r|

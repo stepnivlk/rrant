@@ -2,6 +2,8 @@ require 'rrant/helper'
 require 'rrant/error'
 
 module Rrant
+  # Public: Contains local storage handling methods, operates on top of
+  # store object.
   class Local
     include Helper
 
@@ -12,6 +14,8 @@ module Rrant
       @unseen = false
     end
 
+    # Public: Returns random rant from the store. Returns placeholder if there
+    # are no available rants. Updates rant's 'viewed_at' parameter.
     def random
       return placeholder if @store.empty?
       rant = pick_random
@@ -20,6 +24,8 @@ module Rrant
       rant.tap { |r| @store.touch(r['id']) }
     end
 
+    # Public: Sets 'unseen' instance variable and returns self. With 'unseen'
+    # set to true, we fetch only rants with 'viewed_at' set to nil.
     def unseen(set)
       @unseen = set
       self
@@ -27,6 +33,8 @@ module Rrant
 
     private
 
+    # Private: Grabs random rant from the store according to 'unseen' instance
+    # variable.
     def pick_random
       return @store.entities.sample unless @unseen
 
