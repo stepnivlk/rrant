@@ -36,7 +36,7 @@ Or install it yourself as:
 Usage: rrant [options]
     -i, --images                     renders images to the console
     -u, --unseen                     shows only unseen rants
-    -f, --fetch AMOUNT               fetches new rants in background
+    -f, --fetch AMOUNT               fetches new rants
     -h, --help                       Display this screen
 ```
 
