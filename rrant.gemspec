@@ -17,9 +17,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'bin'
-  spec.executables << 'rrant'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = 'exe'
+  spec.executables   = ['rrant']
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'httparty', '~> 0.14'
