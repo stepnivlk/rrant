@@ -17,7 +17,7 @@ option_parser = OptionParser.new do |opts|
     handler.unseen
   end
 
-  opts.on('-f', '--fetch AMOUNT', 'fetches new rants in background') do |amount|
+  opts.on('-f', '--fetch AMOUNT', 'fetches new rants') do |amount|
     handler.dos(amount.to_i)
   end
 
