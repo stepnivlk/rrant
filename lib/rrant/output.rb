@@ -49,7 +49,7 @@ module Rrant
 
     def build_address
       'https://www.devrant.io/'.tap do |url|
-        url << "#{@rant['id']}" if @rant['id']
+        url << "rants/#{@rant['id']}" if @rant['id']
       end
     end
   end

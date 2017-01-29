@@ -36,7 +36,7 @@ describe Rrant::Remote do
 
     it '#save remote rants and adds them to the store' do
       VCR.use_cassette('image_rants') do
-        remote.save
+        remote.save(10)
       end
 
       expect(remote.rants.size).to be >= 10

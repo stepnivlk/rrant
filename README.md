@@ -5,7 +5,7 @@
 ➜  ~ rrant
 It would be really FUCKING great if NodeJS or mysql could give me a FUCKING shout or ERROR MESSAGE when one of the parameters I'm giving is not the RIGHT FUCKING DATA TYPE INSTEAD OF THROWING A RANDOM ERROR THAT DOESN'T INDICATE A WRONG MOTHERFUCKING DATA TYPE. Five FUCKING hours of debugging later.
 
-[linuxxx][55][https://www.devrant.io/403040]
+[linuxxx][55][https://www.devrant.io/rants/403040]
 ```
 
 Have you ever wanted to read some rants in your terminal ? Now you can and it will look like you work, since terminal output looks serious!

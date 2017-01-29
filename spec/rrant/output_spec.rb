@@ -19,7 +19,7 @@ describe Rrant::Output do
       footer = "\n\e[37m[\e[0mbill\e[37m][\e[0m640\e[37m][\e[0mhttps://www.devrant.io/rants/1\e[37m]\e[0m"
       expect(STDOUT).to receive(:puts).with(rant['text'])
       expect(STDOUT).to receive(:puts).with(footer)
-      
+
       output_obj.out
     end
   end
