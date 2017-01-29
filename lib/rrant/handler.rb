@@ -2,21 +2,39 @@ require 'rrant/local'
 require 'rrant/remote'
 require 'rrant/store'
 require 'rrant/output'
+require 'rrant/helper'
 
 module Rrant
+  # Public: Initializes all the necessary objects and contains
+  # configuration methods.
   class Handler
+    include Helper
+
     def initialize
-      @store = Store.new
-      @show_images = true
+      @store       = Store.new
+      @unseen      = false
+      @show_images = false
+      @bill        = false
     end
 
+    # Public: Finds random rant or bill and initializes output with it.
+    #
+    # Returns instance of Rrant::Output.
     def rave
-      rant = local.unseen(@unseen).random
+      rant = @bill ? bill : local.unseen(@unseen).random
       Output.new(rant, @show_images)
     end
 
-    def dos
-      Thread.new { remote.save }
+    # Public: Fetches rants from remote API. Returns bill if amount
+    # is too high.
+    #
+    # min_amount - Integer, how many rants we want to fetch.
+    #
+    # Returns self.
+    def dos(min_amount = 10)
+      return @bill = true if min_amount > 80
+
+      remote.save(min_amount)
       self
     end
 

@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(File.dirname(__FILE__), *%w{ .. lib })
+
+require 'optparse'
+require 'rrant'
+
+handler = Rrant.and
+
+option_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: rrant [options]"
+  opts.on('-i', '--images', 'renders images to the console') do
+    handler.with_images(true)
+  end
+
+  opts.on('-u', '--unseen', 'shows only unseen rants') do
+    handler.unseen
+  end
+
+  opts.on('-f', '--fetch AMOUNT', 'fetches new rants in background') do |amount|
+    handler.dos(amount.to_i)
+  end
+
+  opts.on("-h", "--help", "Display this screen") do
+    puts opts
+    exit
+  end
+end
+
+option_parser.parse!
+
+handler.rave.out

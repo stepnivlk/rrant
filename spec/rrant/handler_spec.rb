@@ -42,9 +42,5 @@ describe Rrant::Handler do
     it 'returns output' do
       expect(handler.rave).to be_instance_of(Rrant::Output)
     end
-
-    it 'passes call to Otput and returns rant hash' do
-      expect(handler.rave.in).to include(RrantHelper.fake_placeholder)
-    end
   end
 end
