@@ -14,7 +14,7 @@ module Rrant
     #
     # path - Integer, directory where we want to store our rants/images
     def initialize(path = nil)
-      path = path || Dir.home
+      path ||= Dir.home
       raise Error::InvalidPath unless Dir.exist?(path)
 
       @root = "#{path}/.rrant"
