@@ -1,5 +1,6 @@
 # Rrant
 [![Build Status](https://travis-ci.org/stepnivlk/rrant.svg?branch=master)](https://travis-ci.org/stepnivlk/rrant)
+[![Ebert](https://ebertapp.io/github/stepnivlk/rrant.svg)](https://ebertapp.io/github/stepnivlk/rrant)
 
 ```
 ➜  ~ rrant
