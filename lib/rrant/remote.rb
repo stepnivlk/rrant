@@ -12,7 +12,7 @@ module Rrant
 
     attr_reader :rants
 
-    BASE_URL  = 'https://www.devrant.io/api/devrant/rants?app=3'
+    BASE_URL  = 'https://www.devrant.io/api/devrant/rants?app=3'.freeze
     MAX_CYCLE = 10
     SLEEP     = 0.4
 
@@ -123,7 +123,7 @@ module Rrant
     #
     # Returns string.
     def build_url(skip, sort)
-      BASE_URL.tap do |url|
+      BASE_URL.dup.tap do |url|
         skip != 0 && url << "&skip=#{skip * 20}"
         url << "&sort=#{sort}"
       end

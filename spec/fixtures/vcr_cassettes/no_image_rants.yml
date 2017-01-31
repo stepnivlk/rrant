@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.10.0 (Ubuntu)
       Date:
-      - Sat, 28 Jan 2017 22:18:18 GMT
+      - Tue, 31 Jan 2017 22:57:50 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -37,71 +37,94 @@ http_interactions:
       - OPTIONS
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"rants":[{"id":403092,"text":"Nothing is more permanent
-        than temporary fix.\nMarps.. \ud83d\ude02\ud83d\ude02","num_upvotes":52,"num_downvotes":1,"score":52,"created_time":1485607005,"attached_image":"","num_comments":2,"tags":["rant","admin"],"vote_state":0,"edited":false,"user_id":400332,"user_username":"avicoder","user_score":125,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-3_16-1_3-12_8-1_7-1_5-1_12-3_6-21_2-18_11-2_4-1.jpg"}},{"id":403169,"text":"Me
-        bug fixing","num_upvotes":72,"num_downvotes":3,"score":72,"created_time":1485612848,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403169_M65fk.gif","width":500,"height":263,"frame":"https:\/\/img.devrant.io\/devrant\/rant\/frame_r_403169_M65fk.jpg"},"num_comments":0,"tags":["bug","fix","bug
-        fixing","problem"],"vote_state":0,"edited":false,"user_id":275781,"user_username":"Aaronmacaron","user_score":734,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-1_16-6_3-6_8-1_7-1_5-1_12-1_6-7_2-31_4-1.jpg"}},{"id":403045,"text":"BMW
-        car using php..","num_upvotes":94,"num_downvotes":2,"score":94,"created_time":1485604664,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403045_5Wncw.jpg","width":480,"height":360},"num_comments":14,"tags":["car","bmw","fatal","php","error"],"vote_state":0,"edited":false,"user_id":360178,"user_username":"l3lackcurtains","user_score":822,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-22_10-1_2-14_15-10_4-1.jpg"}},{"id":403073,"text":"Worst
-        IDE you''ve worked with? Mine is xcode","num_upvotes":36,"num_downvotes":1,"score":36,"created_time":1485605810,"attached_image":"","num_comments":38,"tags":["xcode","ide"],"vote_state":0,"edited":false,"user_id":403030,"user_username":"PocKeT","user_score":71,"user_avatar":{"b":"7bc8a4"}},{"id":403140,"text":"@dfox
-        it would be really great if you guys could group the notifications","num_upvotes":53,"num_downvotes":1,"score":53,"created_time":1485609839,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403140_wsyPD.jpg","width":562,"height":1000},"num_comments":12,"tags":[],"vote_state":0,"edited":false,"user_id":270820,"user_username":"maxx555","user_score":147,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-10_3-6_8-1_7-1_5-1_12-2_6-15_2-38_15-11_4-1.jpg"}},{"id":403040,"text":"It
-        would be really FUCKING great if NodeJS or mysql could give me a FUCKING shout
-        or ERROR MESSAGE when one of the parameters I''m giving is not the RIGHT FUCKING
-        DATA TYPE INSTEAD OF THROWING A RANDOM ERROR THAT DOESN''T INDICATE A WRONG
-        MOTHERFUCKING DATA TYPE. Five FUCKING hours of debugging later.","num_upvotes":52,"num_downvotes":0,"score":52,"created_time":1485604509,"attached_image":"","num_comments":15,"tags":["node","fucking","mysql","nodejs","fml","fuckity","fuck"],"vote_state":0,"edited":false,"user_id":22941,"user_username":"linuxxx","user_score":4793,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-3_3-3_8-3_7-3_5-2_12-2_6-7_10-9_2-48_15-11_18-4_4-2_19-3.jpg"}},{"id":403138,"text":"Me
-        everytime Windows tells me \"This won''t take long\"","num_upvotes":50,"num_downvotes":2,"score":50,"created_time":1485609695,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403138_pVBCj.jpg","width":625,"height":351},"num_comments":3,"tags":["lies","windows"],"vote_state":0,"edited":true,"user_id":112988,"user_username":"Koenn","user_score":395,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-1_3-1_8-1_7-1_5-1_12-2_6-3_10-5_2-15_18-1_4-1_19-1.jpg"}},{"id":403084,"text":"--
-        How I succeeded turning a PHP\/MYSQL app into Android app within a week --
-        \n\nAlright. So I wanted to grab your attention to what I''m about to write.
-        If you are here just to read about the technologies I used, jump to bottom.
-        \n\nThis is also a kind of rant; rant against the other fellow devs who demotivated
-        me originally when I asked a question. \n\nI''ll not go in the details of
-        my original question. Here''s the link for those who are interested: \nhttps:\/\/www.devrant.io\/rants\/366496\nIt''s
-        been days since I achieved what I wanted to but I thought someone might learn
-        from my experience. So here it goes. \n\nWhy FREE? \nWell, it was an important
-        client. I worked on his website and he asked for an app for the same website
-        and told me he won''t be able to pay me anything for the app. I was, somewhat,
-        under the impression that he might be testing me. If not, then I would end
-        up learning something new. It wasn''t a bad deal for me so I didn''t hesitate
-        to took it. \n\nWithin a week, I was able to pull the job and finish it. I
-        felt so much better (and proud of myself) when I finished the app within the
-        week and client approved it. What did I get? I got a GOOD BANK CLIENT in my
-        pocket now. Got a lot more worth of projects from the same client. If I were
-        being paid for the app, I might not have pulled the job so much better. \n\nSo
-        the moral of this story is never to give up. NOT EVERY DEVELOPER SELLS SHORT
-        ONLY FOR \"MONEY\". Some enjoy learning new things. And some like me love
-        to accept new challenges and are not afraid to try something new everyday.
-        \n\nIn case, someone is interested in knowing the technologies I used, here
-        they go; \n\nPhoneGap \nFramework7 \nTemplate7 \nApache Cordova \n\nI wrote
-        an API for the interaction between the web services and the app. \n\nAlso,
-        Ionic Framework seems promising but it had a learning curve and time was of
-        the essence. But I''m gonna learn it anyhow.","num_upvotes":32,"num_downvotes":0,"score":32,"created_time":1485606561,"attached_image":"","num_comments":13,"tags":["rant","hybrid
-        app"],"vote_state":0,"edited":true,"links":[{"type":"url","url":"https:\/\/www.devrant.io\/rants\/366496","short_url":"https:\/\/www.devrant.io\/rants\/366496","title":"https:\/\/www.devrant.io\/rants\/366496","start":449,"end":484,"special":1}],"special":true,"user_id":49873,"user_username":"devRat","user_score":2944,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-17_3-3_8-2_7-2_5-2_12-2_6-2_10-1_2-5_4-2.jpg"}},{"id":403189,"text":"Does
-        anyone else reinstall their OS just because it gets too cluttered? It works
-        fine, but a year and a half of installs and uninstalls have wreaked havoc
-        on my filesystem. I may have OCD...","num_upvotes":28,"num_downvotes":1,"score":27,"created_time":1485614206,"attached_image":"","num_comments":9,"tags":["windows","ocd","reinstall"],"vote_state":0,"edited":true,"user_id":303564,"user_username":"jlave215","user_score":1651,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-3_16-3_3-4_8-2_7-2_5-2_12-3_6-11_10-9_2-49_11-3_18-3_4-2_19-3.jpg"}},{"id":403175,"text":"\"we
-        use machine learning to ...\"\nFfs you''re interviewing a developer, not pitching
-        to a investor. We know how much machine learning you use.","num_upvotes":24,"num_downvotes":0,"score":24,"created_time":1485613468,"attached_image":"","num_comments":7,"tags":["machine
-        learning","ml","data science"],"vote_state":0,"edited":false,"user_id":300157,"user_username":"jshint","user_score":855,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-5_3-3_8-1_7-1_5-1_12-2_6-34_2-17_15-47_4-1.jpg"}},{"id":403061,"text":"People
-        who hate random programming languages without really spending time working
-        with them...","num_upvotes":26,"num_downvotes":0,"score":26,"created_time":1485605360,"attached_image":"","num_comments":12,"tags":["java","php","penis"],"vote_state":0,"edited":false,"user_id":403030,"user_username":"PocKeT","user_score":71,"user_avatar":{"b":"7bc8a4"}},{"id":403496,"text":"Comic
-        sans \ud83d\ude02","num_upvotes":38,"num_downvotes":3,"score":38,"created_time":1485629973,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403496_MectE.jpg","width":600,"height":800},"num_comments":2,"tags":["comic
-        sans","lol","font"],"vote_state":0,"edited":false,"user_id":326718,"user_username":"gururaju","user_score":2445,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-10_3-2_8-1_7-1_5-1_12-1_6-2_10-1_2-31_15-10_4-1.jpg"}},{"id":403324,"text":"I
-        only know html & CSS, but struggle so much to understand JavaScript. \n:(","num_upvotes":16,"num_downvotes":0,"score":16,"created_time":1485620460,"attached_image":"","num_comments":9,"tags":["how","do","i","learn","better","harder","faster","stronger"],"vote_state":0,"edited":false,"user_id":266107,"user_username":"tando97","user_score":17,"user_avatar":{"b":"7bc8a4"}},{"id":403053,"text":"@StefanH
-        This still hasn''t been resolved, 2 weeks later","num_upvotes":35,"num_downvotes":0,"score":35,"created_time":1485605056,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403053_cT8G3.jpg","width":750,"height":1000},"num_comments":8,"tags":["updates","microsoft","security"],"vote_state":0,"edited":false,"user_id":211795,"user_username":"Maxxi","user_score":204,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-15_3-4_8-1_7-1_5-1_12-2_6-11_2-17_15-11_18-1_4-1_19-1.jpg"}},{"id":402952,"text":"me,
-        when the deadline is next week","num_upvotes":137,"num_downvotes":2,"score":137,"created_time":1485599689,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_402952_EWkeV.jpg","width":500,"height":500},"num_comments":6,"tags":["deadline","redbull"],"vote_state":0,"edited":false,"user_id":262936,"user_username":"lisper","user_score":1129,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-16_3-3_8-2_7-2_5-1_12-1_6-23_2-39_18-2_4-1_19-1.jpg"}},{"id":402988,"text":"Linux
-        set up on laptop day 2: can''t make the screen lock after resume from suspend,
-        can''t connect to my VPN, can''t set key bindings in i3wm... But I did successfully
-        set my wallpaper.","num_upvotes":35,"num_downvotes":1,"score":34,"created_time":1485601904,"attached_image":"","num_comments":10,"tags":["i3wm","imlearningalot","morebeer","linux"],"vote_state":0,"edited":false,"user_id":362453,"user_username":"vickylaixy","user_score":70,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-f_9-1_1-3_16-18_3-12_8-1_7-1_5-1_12-3_6-6_10-1_2-1_4-1.jpg"}},{"id":403548,"text":"!Rant\nWon
-        $10,000 in a hackathon today. \nNow, time to implement!!","num_upvotes":13,"num_downvotes":0,"score":13,"created_time":1485633327,"attached_image":"","num_comments":5,"tags":[],"vote_state":0,"edited":false,"user_id":245740,"user_username":"bsforza70","user_score":13,"user_avatar":{"b":"7bc8a4"}},{"id":403442,"text":"Flashback
-        to when I was in 7th grade\n\nArt teacher: Taco, your focal point is wrong\nMe:
-        *looks* ....no it''s not\nArt teacher: *looks* ...oh, you''re right\n\nFast
-        forward to c++ class\n\nProf: Taco your calculation is incorrect\nMe: *looks*
-        ....no it''s not\nProf: *looks* ...oh, you''re right","num_upvotes":14,"num_downvotes":0,"score":14,"created_time":1485626311,"attached_image":"","num_comments":2,"tags":["taco","c++","art"],"vote_state":0,"edited":false,"user_id":386247,"user_username":"TacoConnoisseur","user_score":20,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-4_3-3_8-1_7-1_5-1_12-2_6-3_2-34_11-2_4-1.jpg"}},{"id":402970,"text":"http:\/\/foaas.com\nFuck
-        Off As a Service!\n\nJust checkout API endpoints!","num_upvotes":44,"num_downvotes":1,"score":44,"created_time":1485600611,"attached_image":"","num_comments":3,"tags":["funny","no
-        more manual fo","foaas"],"vote_state":0,"edited":true,"links":[{"type":"url","url":"http:\/\/foaas.com","short_url":"http:\/\/foaas.com","title":"http:\/\/foaas.com","start":0,"end":16,"special":1}],"special":true,"user_id":173038,"user_username":"jackgreen","user_score":1301,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-12_3-6_8-1_7-1_5-1_12-1_6-1_10-7_2-12_11-1_18-1_4-1_19-1.jpg"}},{"id":403153,"text":"!rant\n\nScore!\n\n(Sorry,
-        just couldn''t resist, after I was lucky enough to see this before another
-        ++ came in)","num_upvotes":21,"num_downvotes":2,"score":20,"created_time":1485611014,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403153_vR2zc.jpg","width":716,"height":557},"num_comments":3,"tags":["1337"],"vote_state":0,"edited":false,"user_id":156434,"user_username":"corscheid","user_score":1394,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-6_3-1_8-1_7-1_5-1_12-2_6-2_10-1_2-10_15-18_11-2_18-1_4-1_19-1.jpg"}}],"settings":[],"set":"588d18aa181b9","wrw":36}'
+      string: '{"success":true,"rants":[{"id":407039,"text":"Performance Optimization:
+        when you spend 3 days, to improve site loading by 0.5 secs.","num_upvotes":62,"num_downvotes":0,"score":62,"created_time":1485872191,"attached_image":"","num_comments":7,"tags":["performance","website"],"vote_state":0,"edited":false,"user_id":22496,"user_username":"tirthaguha","user_score":740,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-2_16-1_3-7_8-1_7-1_5-1_12-2_6-57_2-36_15-17_11-2_4-1_19-1.jpg"}},{"id":406934,"text":"What
+        is machine learning?","num_upvotes":124,"num_downvotes":0,"score":124,"created_time":1485866792,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_406934_g38eP.jpg","width":800,"height":800},"num_comments":17,"tags":["machine
+        learning"],"vote_state":0,"edited":false,"user_id":178420,"user_username":"bdhobare","user_score":5388,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-2_16-10_3-11_8-1_7-1_5-2_12-2_6-11_10-5_2-14_18-4_4-2_19-3.jpg"}},{"id":407013,"text":"Fake
+        windows update + f11 = colleague complains all day!","num_upvotes":60,"num_downvotes":0,"score":60,"created_time":1485871074,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407013_zAfz6.jpg","width":800,"height":600},"num_comments":3,"tags":["prank","wk37"],"vote_state":0,"edited":false,"user_id":397260,"user_username":"gatuso","user_score":67,"user_avatar":{"b":"ecd276","i":"v-11_c-3_b-7_g-m_9-1_1-3_16-15_3-1_8-1_7-1_5-1_12-3_6-59_2-9_15-68_4-1.jpg"}},{"id":407265,"text":"You
+        don''t see that much self confidence very often \ud83d\ude05","num_upvotes":47,"num_downvotes":0,"score":47,"created_time":1485884756,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407265_k6v68.jpg","width":789,"height":1000},"num_comments":10,"tags":[],"vote_state":0,"edited":false,"user_id":360006,"user_username":"Rummage","user_score":115,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-6_3-1_8-1_7-1_5-1_12-1_6-3_2-10_4-1.jpg"}},{"id":407271,"text":"Obligatory
+        message describing picture","num_upvotes":46,"num_downvotes":0,"score":46,"created_time":1485885041,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407271_ASMNn.jpg","width":800,"height":669},"num_comments":8,"tags":["hardware","hacking","deep","funny"],"vote_state":0,"edited":false,"user_id":149341,"user_username":"jarodsmk","user_score":4007,"user_avatar":{"b":"ecd276","i":"v-11_c-3_b-7_g-m_9-1_1-2_16-6_3-9_8-4_7-4_5-2_12-2_6-1_10-4_2-45_15-9_11-3_18-3_4-2_19-3.jpg"}},{"id":407183,"text":"The
+        man who runs my IT department. The man who is in charge of all things and
+        people that are technical: IT management  software development, infrastructure,
+        training, help desk, system administration\u200b, etc. A man with a staff
+        of fifty plus. If you were to peel back the flesh on this man''s head and
+        crack open his skull you would find dung beetles feasting on the feces that
+        power his thoughts and motor functions. Underneath this foul membrane, if
+        you could push past the maggots; the meal worms; his undying love for hourly
+        binges of Johnny Walker Black on any day of the week with a name that contains
+        a vowel; his fascination with shiny objects and his endless internal monologue
+        wondering when they would hatch rainbow ponies that fly; his desire whenever
+        he enters a paint store to open all the cans of paint and taste the different
+        colors; if you could push past all of the vile crap that exists where Thomas
+        Aquinas once theorized there was a soul, you would find a colony of paramecia
+        at the end of their short lives laughing hysterically at how much smarter
+        they were than the host they lived in.\n\nThis man was in charge of hiring
+        the Manager of Software Development. The manager I report to. After seven
+        months of ignoring this chore; after interviewing the sum total of four candidates;
+        after making a point to tell myself and a colleague that there was no one
+        qualified to fill this position within our company (an opinion that is both
+        untrue and, when spoken, runs afoul of internal hiring policies) this man
+        hired a soulless cretin with no experience in software development or with
+        running a software development group. A man who regularly confuses web servers
+        and SQL servers. A man who asked me how my previous manager reviewed my work,
+        was told by me that said previous manager read my code, and then replied in
+        his capacity as the manager of software development that \"looking at code
+        is a compete waste of time for a manager.\" A man so without any humanity
+        or reason for being that he will sit silently, creepily, in conference rooms
+        with the lights off waiting for meetings to begin. Meetings he has scheduled.
+        That have no reason for being in the first place. Just like himself.\n\nShortly
+        before the man in charge offered the Dev Manager job to the simulacrum of
+        human flesh that is my manager, he met with me and others who had been involved
+        in the interview process. When I informed him that hiring someone with no
+        technical knowledge for a very technical position would be a mistake that
+        he would suffer through for years, he replied in reference to his future hire
+        that \"his managerial experience makes up for his lack of technical knowledge.\"\n\nBest.
+        Prank. Ever. Worst prank ever too. Fuck.","num_upvotes":31,"num_downvotes":0,"score":31,"created_time":1485881040,"attached_image":"","num_comments":1,"tags":["wk37","nightmare","paramecia"],"vote_state":0,"edited":false,"user_id":392292,"user_username":"this","user_score":63,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-3_3-5_8-1_7-1_5-1_12-3_6-3_2-39_15-48_11-2_4-1.jpg"}},{"id":407261,"text":"Story
+        of everyday when you are bored with your job and in life","num_upvotes":52,"num_downvotes":4,"score":51,"created_time":1485884502,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407261_pyNuq.jpg","width":480,"height":312},"num_comments":0,"tags":[],"vote_state":0,"edited":false,"user_id":273680,"user_username":"mssucks","user_score":55,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-4_16-5_3-2_8-1_7-1_5-1_12-4_6-7_10-1_2-3_4-1.jpg"}},{"id":407117,"text":"shutdown
+        -s -t 1925000 -c \u201cSystem error: overloaded porn folder\u201d","num_upvotes":29,"num_downvotes":0,"score":29,"created_time":1485876934,"attached_image":"","num_comments":4,"tags":["wk37"],"vote_state":0,"edited":true,"user_id":279630,"user_username":"linuxer4fun","user_score":2321,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-2_16-15_3-14_8-2_7-2_5-2_12-2_6-17_10-9_2-54_15-17_11-5_18-3_4-2_19-3.jpg"}},{"id":406963,"text":"\"caps
+        lock\"","num_upvotes":36,"num_downvotes":0,"score":36,"created_time":1485868046,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_406963_ijJ93.jpg","width":799,"height":746},"num_comments":6,"tags":["wk37"],"vote_state":0,"edited":true,"user_id":141630,"user_username":"mkg20001","user_score":105,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-2_3-6_8-1_7-1_5-1_12-3_6-3_2-10_4-1.jpg"}},{"id":406960,"text":"Today
+        is my fourth try to pass advanced algorithms. Wish me luck.","num_upvotes":23,"num_downvotes":0,"score":23,"created_time":1485867872,"attached_image":"","num_comments":5,"tags":[],"vote_state":0,"edited":false,"user_id":26190,"user_username":"OttkO","user_score":227,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-1_16-1_3-3_8-1_7-1_5-1_12-1_6-50_2-1_4-1.jpg"}},{"id":407394,"text":"Does
+        anyone agree? \ud83d\ude04","num_upvotes":37,"num_downvotes":4,"score":37,"created_time":1485890089,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407394_NoTaf.jpg","width":637,"height":628},"num_comments":2,"tags":[],"vote_state":0,"edited":false,"user_id":407390,"user_username":"strider","user_score":37,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-2_3-2_8-1_7-1_5-1_12-2_6-3_2-19_15-19_4-1.jpg"}},{"id":407131,"text":"When
+        someone gets you:","num_upvotes":28,"num_downvotes":0,"score":28,"created_time":1485877876,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407131_H2UW5.jpg","width":562,"height":999},"num_comments":6,"tags":["#brother
+        from another mother"],"vote_state":0,"edited":false,"user_id":183103,"user_username":"JavaRules","user_score":1087,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-1_16-7_3-1_8-2_7-2_5-1_12-1_6-3_10-9_2-27_11-3_18-2_4-1_19-2.jpg"}},{"id":407150,"text":"!Rant\n\nLearning
+        Processing and Generative Art , still a Noob but loving it. \n\nIt''s awesome
+        what Code can do.","num_upvotes":25,"num_downvotes":0,"score":25,"created_time":1485879036,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407150_X2ehr.jpg","width":511,"height":600},"num_comments":11,"tags":["processing","code","marlyne
+        monroe"],"vote_state":0,"edited":false,"user_id":280212,"user_username":"aswinmohanme","user_score":350,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-6_3-2_8-1_7-1_5-1_12-2_6-2_10-1_2-39_15-10_4-1.jpg"}},{"id":407501,"text":"There
+        is this salesman right across from me that always brags about how rich his
+        parents are and how lucky us tech guys are for having such an easy job. He
+        told me one day that he was going to quit and make his own software company
+        currently having no developing experience at all because \"I''ve seen some
+        of these developers. If those guys can do it, it''ll be a breeze.\" I convinced
+        him that the best language to learn in order to make your own websites\/apps
+        is Linux command line. Hilariously enough, the other 2 devs heard me say that
+        and when Glenn the sales douche followed up with them one of them told him
+        \"Yeah, If you think you''re really going to be quick with it then Linux will
+        be your best bet, but if you have trouble just learn C++ instead and you''ll
+        still be able to make websites.\" Best of luck on your new Venture, you spoiled
+        jizz stain.","num_upvotes":19,"num_downvotes":0,"score":19,"created_time":1485895530,"attached_image":"","num_comments":1,"tags":["wk37"],"vote_state":0,"edited":false,"user_id":59471,"user_username":"Dane","user_score":538,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-1_16-4_3-2_8-1_7-1_5-1_12-1_6-76_10-3_2-36_18-2_4-1_19-1.jpg"}},{"id":406883,"text":"For
+        April Fools at a school I worked for, I printed off one of those \"Your printer
+        has been upgraded to be voice activated\" signs and put it on their fairly
+        new printer, went into the room opposite and waited. I heard far far too many
+        teachers saying \"Copy!\" repeatedly, getting more and more agitated before
+        ''manually'' copying their document. I had to come clean before I left at
+        lunch time because one of the teachers got quite angry at the prospect of
+        a voice activated photocopier and refused to use it that way. The following
+        year April Fools was on a school holiday so I couldn''t pull it in the school
+        I was in that day but i fully expect it to work somewhere else.","num_upvotes":45,"num_downvotes":0,"score":45,"created_time":1485863588,"attached_image":"","num_comments":2,"tags":["wk37"],"vote_state":0,"edited":false,"user_id":163073,"user_username":"RichSouth","user_score":138,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-10_3-2_8-1_7-1_5-1_12-2_6-6_10-1_2-19_15-10_11-2_4-1.jpg"}},{"id":407060,"text":"Show
+        the code \ud83d\udcbb","num_upvotes":29,"num_downvotes":2,"score":29,"created_time":1485873248,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407060_tGxvq.jpg","width":750,"height":289},"num_comments":0,"tags":["father
+        of linux","programmer","developer","coder"],"vote_state":0,"edited":false,"user_id":151617,"user_username":"lmboricua","user_score":400,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-4_16-6_3-4_8-1_7-1_5-1_12-4_6-14_10-1_2-1_15-42_11-2_4-1.jpg"}},{"id":406912,"text":"we
+        had a spare box full of packaging pellets, and an unlocked desk :)","num_upvotes":36,"num_downvotes":0,"score":36,"created_time":1485864991,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_406912_RTpGX.jpg","width":800,"height":800},"num_comments":3,"tags":["wk37"],"vote_state":0,"edited":false,"user_id":152573,"user_username":"CrashOverride","user_score":985,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-2_3-9_8-1_7-1_5-1_12-2_6-15_10-1_2-32_15-7_18-2_4-1_19-2.jpg"}},{"id":407258,"text":"It''s
+        2017 and people still can''t respond to emails properly. Learn to reply-to-all
+        already ffs!","num_upvotes":13,"num_downvotes":0,"score":13,"created_time":1485884452,"attached_image":"","num_comments":3,"tags":["email"],"vote_state":0,"edited":false,"user_id":402643,"user_username":"thpoul","user_score":59,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-3_16-6_3-2_8-1_7-1_5-1_12-3_6-2_10-1_2-10_4-1.jpg"}},{"id":407301,"text":"Most
+        Irritating moment\nWhen u gonna edit any webpage and want to open it using
+        Notepad and \nBy mistakenly u presses\n\n\"Open with Microsoft Visual studio
+        or Android Studio\"\n\ud83d\ude2b","num_upvotes":14,"num_downvotes":0,"score":14,"created_time":1485886346,"attached_image":"","num_comments":0,"tags":["pc
+        slows down while launching these ides"],"vote_state":0,"edited":false,"user_id":270633,"user_username":"perix2","user_score":379,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-4_16-6_3-3_8-1_7-1_5-1_12-4_17-1_6-2_10-5_2-10_18-1_4-1_19-1.jpg"}},{"id":407477,"text":"This
+        should be in every email client ever, always. Now. And forever.","num_upvotes":20,"num_downvotes":0,"score":20,"created_time":1485894832,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407477_oxEX1.jpg","width":800,"height":326},"num_comments":2,"tags":["gmail","attachment","googledonegood"],"vote_state":0,"edited":true,"user_id":319102,"user_username":"gratitude","user_score":24,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-3_16-10_3-5_8-1_7-1_5-1_12-3_6-23_2-33_15-3_4-1.jpg"}}],"settings":[],"set":"5891166e823df","wrw":37,"news":{"id":53,"type":"intlink","headline":"Weekly
+        Group Rant","body":"Best office prank on you\/from you?","footer":"Add tag
+        ''wk37'' to your rant","height":100,"action":"grouprant"}}'
     http_version: 
-  recorded_at: Sat, 28 Jan 2017 22:18:16 GMT
+  recorded_at: Tue, 31 Jan 2017 22:57:48 GMT
 - request:
     method: get
     uri: https://www.devrant.io/api/devrant/rants?app=3&skip=20&sort=algo
@@ -123,7 +146,7 @@ http_interactions:
       Server:
       - nginx/1.10.0 (Ubuntu)
       Date:
-      - Sat, 28 Jan 2017 22:18:19 GMT
+      - Tue, 31 Jan 2017 22:57:52 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -139,106 +162,63 @@ http_interactions:
       - OPTIONS
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"rants":[{"id":403127,"text":"!rant\n\nSo I''m looking
-        for advice.\nI''m 16 and I''d like to eventually work at some sort of tech
-        startup, probably doing something like web development as that''s what I''ve
-        done the most of. I have been teaching myself and practicing programming for
-        years and have experience with HTML, CSS, JS, NodeJS, Socket.io etc. but don''t
-        necessarily have a lot of experience with some necessary frameworks such as
-        ReactJS or AngularJS, so I couldn''t really apply for any of the job listings
-        I''ve seen so far. I currently work in retail so it''s possible that I could
-        work somewhere such as an Apple Store.\n\nWhat''s the best next step? Is a
-        university course the right option or should I be trying to find something
-        such as work experience?\n\nIf you got to the end, thanks for reading my long
-        winded and badly written post. Looking forward to hearing the advice of some
-        fellow devs.","num_upvotes":9,"num_downvotes":0,"score":9,"created_time":1485608542,"attached_image":"","num_comments":9,"tags":["university","jobs","help","advice"],"vote_state":0,"edited":true,"user_id":382754,"user_username":"FJPackard","user_score":251,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-6_3-6_8-1_7-1_5-1_12-3_17-1_6-97_10-4_2-45_15-32_11-2_18-1_4-1_19-1.jpg"}},{"id":402987,"text":"Just
-        used my first \"It''s not a bug, it''s a feature\" explanation \ud83d\ude02.
-        However, the irritating part is, I had to explain it to another person from
-        IT industry (I mean testers) who is from another company.\n\nAnd it''s really
-        a feature and not a bloody bug. Stop reporting it on the bugs list \ud83d\ude25","num_upvotes":24,"num_downvotes":0,"score":24,"created_time":1485601895,"attached_image":"","num_comments":3,"tags":["feature
-        is not a bug","testers","dummies"],"vote_state":0,"edited":false,"user_id":362984,"user_username":"molten","user_score":92,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-4_16-6_3-3_8-1_7-1_5-1_12-4_6-2_10-1_2-1_4-1.jpg"}},{"id":403024,"text":"people
-        asks why they cannot remove their edge from windows, not even with chainsaw.
-        Here is why..\n\nI know everyone is tempted to have an edgeless view, Me too.
-        Especially, if you have OCD.\n\nActually, it prevents you from falling out
-        the windows, home theft, assassination, and roof collapse. Thus, it is intended
-        to be indestructible for your own safety.","num_upvotes":27,"num_downvotes":1,"score":27,"created_time":1485603947,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403024_dT21a.jpg","width":750,"height":1000},"num_comments":1,"tags":[],"vote_state":0,"edited":true,"user_id":314770,"user_username":"psfr937","user_score":382,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-1_3-10_8-1_7-1_5-1_12-2_6-2_10-1_2-1_18-1_4-1.jpg"}},{"id":403559,"text":"Which
-        programming language should I learn first","num_upvotes":16,"num_downvotes":2,"score":16,"created_time":1485633867,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403559_2sfKy.jpg","width":799,"height":884},"num_comments":5,"tags":[],"vote_state":0,"edited":false,"user_id":96542,"user_username":"saltuwaiya","user_score":1972,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-3_3-1_8-1_7-1_5-1_12-1_6-2_2-3_11-2_4-1.jpg"}},{"id":403124,"text":"I
-        should probably kill myself, I''m so sorry.\n30sec for load","num_upvotes":14,"num_downvotes":1,"score":14,"created_time":1485608429,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403124_Xd3zg.jpg","width":587,"height":176},"num_comments":5,"tags":["webpage
-        load"],"vote_state":0,"edited":true,"user_id":38418,"user_username":"meain","user_score":3494,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-2_16-10_3-3_8-2_7-2_5-3_12-2_17-2_6-14_10-5_2-26_15-10_11-1_4-3_19-3.jpg"}},{"id":403102,"text":"Of
-        all the operating systems that I tried, I''m finally very much satisfied with
-        Linux mint xfce . \ud83d\ude00","num_upvotes":9,"num_downvotes":0,"score":9,"created_time":1485607347,"attached_image":"","num_comments":2,"tags":[],"vote_state":0,"edited":false,"user_id":91140,"user_username":"rvbugs0","user_score":521,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-3_16-1_3-8_8-1_7-1_5-1_12-3_6-2_10-1_2-14_15-47_4-1.jpg"}},{"id":403172,"text":"Everyone''s
-        bitching about how costly a College Education is , and that cost makes everyone
-        see it as an option.\n\nWhile here in Kerala , India my Entire 4 year Btech
-        in CS costs less than 2000$ dollars, it''s that cheap , that College is compulsory.\n\nThe
-        million dollar question is should I be happy that College is cheap or Sad
-        that College isn''t an option","num_upvotes":8,"num_downvotes":0,"score":8,"created_time":1485613105,"attached_image":"","num_comments":3,"tags":["not
-        code","cs","college"],"vote_state":0,"edited":false,"user_id":280212,"user_username":"aswinmohanme","user_score":305,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-6_3-2_8-1_7-1_5-1_12-2_6-2_10-1_2-39_15-10_4-1.jpg"}},{"id":402980,"text":"Playing
-        with \"Inspect\" in Google Chrome is fun","num_upvotes":38,"num_downvotes":4,"score":38,"created_time":1485601507,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_402980_ALy45.jpg","width":510,"height":379},"num_comments":3,"tags":["imdb","google
-        chrome","html"],"vote_state":0,"edited":false,"user_id":153221,"user_username":"TangChr","user_score":991,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-1_16-2_3-3_8-1_7-1_5-1_12-1_6-27_10-7_2-43_15-15_11-2_18-2_4-1_19-2.jpg"}},{"id":403047,"text":"You
-        thought nothing travels faster than light?Well, Google Cloud DNS does.","num_upvotes":11,"num_downvotes":0,"score":11,"created_time":1485604843,"attached_image":"","num_comments":1,"tags":["fast","google
-        cloud"],"vote_state":0,"edited":false,"user_id":178420,"user_username":"bdhobare","user_score":5264,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-2_16-10_3-11_8-1_7-1_5-2_12-2_6-11_10-5_2-14_18-4_4-2_19-3.jpg"}},{"id":403234,"text":"I
-        am officially crying because of xcode, all I want to do is sign the fucking
-        version and get on with my life, arghhhh WHY APPLE???? WHYYYYYYYYYU??@?#!@?#!@??@@","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485616750,"attached_image":"","num_comments":3,"tags":["xcode
-        signing capabilities"],"vote_state":0,"edited":false,"user_id":270820,"user_username":"maxx555","user_score":147,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-10_3-6_8-1_7-1_5-1_12-2_6-15_2-38_15-11_4-1.jpg"}},{"id":403054,"text":"How
-        many Laravel PHP users here?","num_upvotes":11,"num_downvotes":0,"score":11,"created_time":1485605108,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403054_FDsha.jpg","width":585,"height":1000},"num_comments":9,"tags":["trickster","php","laravel"],"vote_state":0,"edited":false,"user_id":92444,"user_username":"secrethash","user_score":88,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-2_16-11_3-8_8-1_7-1_5-1_12-2_6-14_10-1_2-39_15-14_4-1.jpg"}},{"id":403192,"text":"Side
-        project is swift. Loads of feedback! I''m happy. Fucked up part is the users
-        who wants it uses Android. Oh well, time to learn React Native","num_upvotes":8,"num_downvotes":1,"score":8,"created_time":1485614413,"attached_image":"","num_comments":2,"tags":["android","react
-        native","swift"],"vote_state":0,"edited":false,"user_id":49713,"user_username":"sylar","user_score":1238,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-4_16-6_3-4_8-1_7-1_5-1_12-4_17-1_6-47_10-3_2-36_15-7_4-1.jpg"}},{"id":403526,"text":"Not
-        sure if this qualifies for a rant or not, but it''s free entertainment. \nI
-        promise it''s good.\nGet your snacks and buckle up. My cat said it''s a solid
-        5\/7, so that''s something.\n\ud83c\udf7f\ud83c\udf55\u2615\nSo, someone from
-        my team (one of the higher ups, let''s call him Mr.Z) got fired yesterday
-        because he said the wrong thing to the wrong person (Let''s call him Mr A)
-        3 months ago.\nApparently, he went over his boss''s head (let''s call him
-        B) and asked for a promotion and said that ''B'' isn''t fit for his position
-        and that he should have that job.\nWhat he didn''t count on was the fact that
-        A and B are kinda tight (I think the fact that they are both from the same
-        ivy league school also plays into this. I''m not gonna say which school, but
-        it''s one out of Harvard and Stanford) So, A got B''s back and he told B that
-        one of his minions is getting out of line... and he should clean his house....
-        and clean his house he did. Plotted and planned for 3 months and executed
-        yesterday.\nZ was kind of a douche but I feel really sorry for him though.
-        He just bought a $1,000,000 house recently and now he''s out of work. Poor
-        guy.\nI hope he finds something soon.\nHe tried to steal some of my work too.
-        Lol.\n(I did write about this in one of my earlier rants I think. About people
-        taking credit behind closed doors)\nAnd this was also used as one of the reasons
-        to fire him among other things.\nI knew that he would try to steal it but
-        I didn''t say anything because I didn''t care. \nHell, I even sat him down
-        and explained it to him line for line when he asked me how it worked. I knew
-        it right then that he''s gonna explain it to the board of his superiors like
-        it was his own code. But I still made sure I explained it to him really well,
-        so that he could replicate the explanation if needed.\nI was playing it strategically.
-        The way I saw it was, that piece of code didn''t really matter to me much,
-        because it couldn''t be used to file a patent or something but if he can show
-        it off as his own, he would make some of his superiors happy.\nThey''re happy
-        == he''s happy.\nAnd that makes my life a little easier because now he''d
-        be willing to help me out with something in the future or maybe overlook some
-        minor stuff if I ever make a mistake in my work...\nIt''s always good to have
-        something in your back pocket for a rainy day.\nIt''s life...you never know
-        when you''re gonna need a favor.\nAll I gotta say is, Fucking office politics
-        is crazy.\nDon''t gamble a hand when you don''t know what your opponent is
-        holding.\nZ gambled and lost. Could have gone the other way, but the chances
-        were very slim.","num_upvotes":7,"num_downvotes":1,"score":7,"created_time":1485631956,"attached_image":"","num_comments":4,"tags":["don''t
-        trust my cat","office politics"],"vote_state":0,"edited":true,"user_id":301636,"user_username":"uddinstock","user_score":2443,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-2_16-1_3-1_8-2_7-2_5-2_12-2_6-3_2-49_4-2.jpg"}},{"id":403236,"text":"Hell
-        yeah!","num_upvotes":13,"num_downvotes":2,"score":13,"created_time":1485616800,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_403236_AqXH4.jpg","width":436,"height":283},"num_comments":1,"tags":[],"vote_state":0,"edited":false,"user_id":389978,"user_username":"jakobev","user_score":65,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-2_16-6_3-6_8-1_7-1_5-1_12-2_6-49_10-1_2-26_15-13_11-2_4-1.jpg"}},{"id":403143,"text":"Fucking
-        project manager giving UI\/UX ideas. I better do it on my own.","num_upvotes":6,"num_downvotes":0,"score":6,"created_time":1485610178,"attached_image":"","num_comments":2,"tags":[],"vote_state":0,"edited":false,"user_id":300157,"user_username":"jshint","user_score":855,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-5_3-3_8-1_7-1_5-1_12-2_6-34_2-17_15-47_4-1.jpg"}},{"id":403025,"text":"Not
-        strictly programming,BUT: does anyone else get an OCD tick or the slight inclination
-        of stroke when loading office 365- make it 2.02 Rads if you really must!","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485603996,"attached_image":"","num_comments":4,"tags":[],"vote_state":0,"edited":false,"user_id":402993,"user_username":"MrJDev","user_score":18,"user_avatar":{"b":"7bc8a4"}},{"id":403379,"text":"Do
-        you guys consider making graphics and assets part of the development process?","num_upvotes":5,"num_downvotes":0,"score":5,"created_time":1485623500,"attached_image":"","num_comments":3,"tags":[],"vote_state":0,"edited":false,"user_id":389203,"user_username":"MightyNerd","user_score":168,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-3_16-3_3-4_8-1_7-1_5-1_12-3_17-1_6-2_10-1_2-10_15-18_18-1_4-1_19-1.jpg"}},{"id":403444,"text":"Hi
-        everyone! \n\nFirst of all this is an awesome community. Its kind of addicting.
-        \n\nI am actually a beginner and want to become good in coding.  So i thought
-        maybe you guys can help me out and share some tips.\n\nAny tips or suggestions
-        will be appreciated... \n\nHave a nice day!","num_upvotes":6,"num_downvotes":2,"score":6,"created_time":1485626362,"attached_image":"","num_comments":8,"tags":[],"vote_state":0,"edited":false,"user_id":400482,"user_username":"Vibhor","user_score":8,"user_avatar":{"b":"7bc8a4"}},{"id":402945,"text":"Singelton.....
-        Is it??","num_upvotes":29,"num_downvotes":0,"score":29,"created_time":1485599559,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_402945_YDosc.jpg","width":562,"height":999},"num_comments":8,"tags":[],"vote_state":0,"edited":false,"user_id":270055,"user_username":"dror","user_score":431,"user_avatar":{"b":"7bc8a4","i":"v-11_c-3_b-1_g-m_9-1_1-2_16-3_3-1_8-1_7-1_5-1_12-2_6-63_10-1_2-26_15-19_18-1_4-1_19-1.jpg"}},{"id":403161,"text":"Need
-        advice\n\nGot placed at LnT Infotech through my college placements\nFree-lanced
-        at a company for four months and got a job offer from them with the same salary.
-        But the work load is too much. There is no such thing as personal time. It''s
-        work 24*7. However, the exposure is good. For one of the projects I was the
-        PM. Had dinner good exposure. But as I said, to much work. I lost quite some
-        weight in the one month that I was the PM.\n\nSo now the problem is, should
-        I join an MNC where my exposure will be terrible or a start-up where my personal
-        life will be terrible","num_upvotes":5,"num_downvotes":0,"score":5,"created_time":1485612168,"attached_image":"","num_comments":2,"tags":["advice
-        needed"],"vote_state":0,"edited":false,"user_id":362984,"user_username":"molten","user_score":92,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-4_16-6_3-3_8-1_7-1_5-1_12-4_6-2_10-1_2-1_4-1.jpg"}}],"settings":[],"set":"588d18abca27b"}'
+      string: '{"success":true,"rants":[{"id":407050,"text":"You got to love linux.\r\nBut
+        linux doesn''t love anyone else.\n\nSource: https:\/\/bash.cyberciti.biz\/guide\/...","num_upvotes":19,"num_downvotes":0,"score":19,"created_time":1485872619,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407050_53Mgk.jpg","width":800,"height":952},"num_comments":2,"tags":["violence","linux","bash"],"vote_state":0,"edited":false,"links":[{"type":"url","url":"https:\/\/bash.cyberciti.biz\/guide\/Putting_functions_in_background","short_url":"https:\/\/bash.cyberciti.biz\/guide\/...","title":"https:\/\/bash.cyberciti.biz\/guide\/...","start":69,"end":105,"special":1}],"special":true,"user_id":384768,"user_username":"theofanis","user_score":125,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-1_16-11_3-6_8-1_7-1_5-1_12-1_6-2_10-1_2-19_15-10_11-2_4-1.jpg"}},{"id":406932,"text":"When
+        I call another dev and he give me another dev''s number and the second one
+        give me another and that one gives another num. :\nI feel like \"ERR_TOO_MANY_REDIRECTS\"","num_upvotes":18,"num_downvotes":1,"score":18,"created_time":1485866452,"attached_image":"","num_comments":0,"tags":["redirect","http"],"vote_state":0,"edited":true,"user_id":264148,"user_username":"amkherad","user_score":65,"user_avatar":{"b":"7bc8a4"}},{"id":407211,"text":"Back
+        in days I hacked Twitter''s Vine.\nNow they shutted it down.\n\nhttps:\/\/avicoder.me\/2016\/07\/...","num_upvotes":10,"num_downvotes":0,"score":10,"created_time":1485882490,"attached_image":"","num_comments":6,"tags":["feelbad","$10000","showoff","30millionstartup"],"vote_state":0,"edited":true,"links":[{"type":"url","url":"https:\/\/avicoder.me\/2016\/07\/22\/Twitter-Vine-Source-code-dump\/","short_url":"https:\/\/avicoder.me\/2016\/07\/...","title":"https:\/\/avicoder.me\/2016\/07\/...","start":65,"end":96,"special":1}],"special":true,"user_id":400332,"user_username":"avicoder","user_score":484,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-3_16-1_3-12_8-1_7-1_5-1_12-3_6-21_2-18_11-2_4-1.jpg"}},{"id":407220,"text":"Fuck!!!","num_upvotes":14,"num_downvotes":0,"score":14,"created_time":1485882787,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_407220_oQdGg.jpg","width":800,"height":449},"num_comments":6,"tags":["fuck"],"vote_state":0,"edited":true,"user_id":279630,"user_username":"linuxer4fun","user_score":2321,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-2_16-15_3-14_8-2_7-2_5-2_12-2_6-17_10-9_2-54_15-17_11-5_18-3_4-2_19-3.jpg"}},{"id":407201,"text":"I
+        shouldn''t have to open the mobile app to know what''s the topic of the weekly
+        rant.","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485882208,"attached_image":"","num_comments":10,"tags":["weekly","devrant","app"],"vote_state":0,"edited":false,"user_id":378420,"user_username":"outfrost","user_score":25,"user_avatar":{"b":"7bc8a4"}},{"id":407083,"text":"Does
+        anybody know what to do???  Im on a serious deadline,  and now,  im fucked...  I
+        dont want to reinstall apricity - \"-","num_upvotes":5,"num_downvotes":0,"score":5,"created_time":1485875045,"attached_image":"","num_comments":15,"tags":["linuxsometimesdoesntwork"],"vote_state":0,"edited":false,"user_id":279630,"user_username":"linuxer4fun","user_score":2321,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-2_16-15_3-14_8-2_7-2_5-2_12-2_6-17_10-9_2-54_15-17_11-5_18-3_4-2_19-3.jpg"}},{"id":406920,"text":"I
+        found a weird registry key while installing Windows 10 in the registry editor.
+        Does this key have an actual purpose?","num_upvotes":21,"num_downvotes":0,"score":21,"created_time":1485865684,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_406920_zy6Yh.jpg","width":799,"height":449},"num_comments":6,"tags":["\ud83c\udf0e\ud83c\udf0f\ud83c\udf0d","windows
+        10","installation","regedit","registry"],"vote_state":0,"edited":false,"user_id":149362,"user_username":"Paramite","user_score":3238,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-6_3-3_8-3_7-3_5-2_12-3_6-82_10-8_2-51_15-14_11-2_18-4_4-2_19-3.jpg"}},{"id":407132,"text":"I
+        saw her, I fell in love with her...\n\nI saw her code, I fell in love with
+        her second time...","num_upvotes":10,"num_downvotes":0,"score":10,"created_time":1485877887,"attached_image":"","num_comments":0,"tags":["developer","dev
+        couple"],"vote_state":0,"edited":false,"user_id":7118,"user_username":"ashokramcse","user_score":11052,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-3_16-13_3-10_8-4_7-4_5-4_12-3_17-1_6-15_10-1_2-26_15-48_11-2_18-4_4-4_19-3.jpg"}},{"id":407360,"text":"The
+        best prank I ever pulled was on one of my IT teachers.\nIn 2011, I had an
+        intense OOP JS training and whil ...[read more]","num_upvotes":8,"num_downvotes":1,"score":8,"created_time":1485888776,"attached_image":"","num_comments":8,"tags":["wk37","oop"],"vote_state":0,"edited":false,"user_id":38745,"user_username":"returnNull","user_score":169,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-2_16-4_3-3_8-1_7-1_5-1_12-2_6-10_2-30_15-14_18-1_4-1_19-1.jpg"}},{"id":407107,"text":"What
+        language to choose next? C# or Java? I''m currently working with Python3...","num_upvotes":4,"num_downvotes":0,"score":4,"created_time":1485876583,"attached_image":"","num_comments":14,"tags":["languages","what
+        to do..","dunno"],"vote_state":0,"edited":false,"user_id":319988,"user_username":"Jappe","user_score":871,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-6_3-2_8-1_7-1_5-1_12-3_6-12_10-3_2-1_18-1_4-1_19-1.jpg"}},{"id":407363,"text":"When
+        I was in college, I had some serious knob-heads in my class. They kept on
+        asking where they could download free movies. \n\nSo I made a .bat file called
+        \"free movies\". It had a nice icon and everything. And placed it on their
+        desktops.\n\nWhat did it do? \n\nKept spawning message boxes that read \"do
+        some math bitch\" and opening  new instances of the calculator.\n\nIt was
+        too brilliant to see people watch their computers crash, and might I add,
+        crash slowly, because these computers had tons of ram.\n\nNever click on \"free
+        movies\" kids.","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485888844,"attached_image":"","num_comments":4,"tags":["wk37","movies","free"],"vote_state":0,"edited":true,"user_id":174172,"user_username":"jacojvvdev","user_score":830,"user_avatar":{"b":"a973a2","i":"v-11_c-3_b-2_g-m_9-1_1-3_16-3_3-3_8-1_7-1_5-1_12-3_6-10_2-1_11-2_4-1.jpg"}},{"id":406841,"text":"Its
+        true \ud83d\ude4b","num_upvotes":54,"num_downvotes":5,"score":54,"created_time":1485861414,"attached_image":{"url":"https:\/\/img.devrant.io\/devrant\/rant\/r_406841_iC6KN.jpg","width":500,"height":800},"num_comments":3,"tags":["intent","code","programs"],"vote_state":0,"edited":true,"user_id":25401,"user_username":"shinoys","user_score":343,"user_avatar":{"b":"69c9cd","i":"v-11_c-3_b-6_g-m_9-1_1-4_16-15_3-7_8-1_7-1_5-1_12-4_17-1_6-14_10-4_2-15_15-14_18-1_4-1_19-1.jpg"}},{"id":407106,"text":"Git
+        pre-commit check means that only team lead can merge to master. Team lead
+        is also pulled in meetings all day everyday and so never has time to merge...","num_upvotes":8,"num_downvotes":0,"score":8,"created_time":1485876536,"attached_image":"","num_comments":0,"tags":[],"vote_state":0,"edited":false,"user_id":69177,"user_username":"rogue63","user_score":141,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-f_9-1_1-2_16-8_3-7_8-1_7-1_5-1_12-2_6-4_10-1_2-32_4-1.jpg"}},{"id":406864,"text":"Simple
+        but hilarious, I inverted the Mouse and keyboard cables between two desktops,
+        so when one of my colleague was moving the mouse, the other saw his mouse
+        moving by itself, I''m still laughing \ud83d\ude02","num_upvotes":18,"num_downvotes":0,"score":18,"created_time":1485862629,"attached_image":"","num_comments":1,"tags":["wk37"],"vote_state":0,"edited":false,"user_id":377164,"user_username":"Eskilop","user_score":27,"user_avatar":{"b":"7bc8a4"}},{"id":406843,"text":"Let''s
+        build a script to import some data...\r\nnow let''s convert this script to
+        a fully fledged importer with a lot of requirements that we didn''t plan and
+        make it sends emails to customers and ops...\r\nwhat could go wrong ?\r\nnow
+        maintain this big ball of slum muddy code","num_upvotes":21,"num_downvotes":0,"score":21,"created_time":1485861491,"attached_image":"","num_comments":2,"tags":[],"vote_state":0,"edited":false,"user_id":318441,"user_username":"mad-raz","user_score":21,"user_avatar":{"b":"7bc8a4"}},{"id":407213,"text":"Just
+        started diving into d3.js.\n\nI think this journey can help me retinkle my
+        creative side.","num_upvotes":6,"num_downvotes":0,"score":6,"created_time":1485882506,"attached_image":"","num_comments":3,"tags":["d3js"],"vote_state":0,"edited":false,"user_id":232103,"user_username":"HoloDreamer","user_score":2528,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-3_3-4_8-1_7-1_5-1_12-2_6-10_10-1_2-31_15-14_4-1.jpg"}},{"id":406895,"text":"I
+        wonder if you guys can help, nobody else seems to. \n\nNine months ago I packed
+        my desktop away because I had to move. \nI then turned it on a few weeks ago
+        and noticed a curious problem: the audio and video stutters. \nI don''t know
+        why this happens. \n\nI tried booting into Linux, and didn''t see any stuttering.
+        I went back over to windows and updated all the drivers, but nothing worked.
+        \nLast night I did a full system wipe, and re-installed windows without leaving
+        any of the old files. \n\nThe error still persists. \n\nI have no clue what
+        might be wrong with the computer. \nFor all I know it''s the hardware that''s
+        failing, but I don''t have any idea which component in the system is leading
+        to this strange behaviour. \n\nMaybe you guys know enough to shed some light
+        on this?","num_upvotes":5,"num_downvotes":0,"score":5,"created_time":1485863971,"attached_image":"","num_comments":20,"tags":["computer
+        problem"],"vote_state":0,"edited":false,"user_id":103102,"user_username":"ElectricCoffee","user_score":3143,"user_avatar":{"b":"2a8b9d","i":"v-11_c-3_b-4_g-m_9-1_1-3_16-12_3-1_8-1_7-1_5-1_12-3_6-31_10-2_2-5_15-11_11-2_18-3_4-1_19-3.jpg"}},{"id":407125,"text":"Distractions
+        are neither created nor destroyed, it just changes from one app to another
+        ;-)\r\nThe Law of Conservation of Distractions","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485877323,"attached_image":"","num_comments":0,"tags":["original","devrant","physics","addiction","distraction","law"],"vote_state":0,"edited":false,"user_id":397274,"user_username":"rsrj","user_score":62,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-6_3-3_8-1_7-1_5-1_12-2_6-2_2-5_15-14_11-1_4-1.jpg"}},{"id":407431,"text":"Best
+        joke played on me, I was told to make our webapp work in IE6 and be pretty!","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485891802,"attached_image":"","num_comments":0,"tags":["wk37"],"vote_state":0,"edited":false,"user_id":1885,"user_username":"farmerhands","user_score":224,"user_avatar":{"b":"f99a66","i":"v-11_c-3_b-3_g-m_9-1_1-1_16-15_3-1_8-1_7-1_5-1_12-1_6-1_10-1_2-12_15-17_4-1.jpg"}},{"id":407284,"text":"Developer,
+        Project Manager and Operations Manager. Sure, I got time to do them all without
+        failing in delivering what my boss expects. \n\nP.S. I really love the fact
+        that even when sick I''m expected to work.\n\nFeeling miserable","num_upvotes":7,"num_downvotes":0,"score":7,"created_time":1485885628,"attached_image":"","num_comments":0,"tags":["fail"],"vote_state":0,"edited":false,"user_id":280608,"user_username":"Julio0agf","user_score":37,"user_avatar":{"b":"d55161","i":"v-11_c-3_b-5_g-m_9-1_1-2_16-1_3-12_8-1_7-1_5-1_12-2_6-51_10-1_2-26_15-38_4-1.jpg"}}],"settings":[],"set":"589116704875c"}'
     http_version: 
-  recorded_at: Sat, 28 Jan 2017 22:18:18 GMT
+  recorded_at: Tue, 31 Jan 2017 22:57:50 GMT
 recorded_with: VCR 3.0.3

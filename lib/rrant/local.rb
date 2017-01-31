@@ -21,7 +21,7 @@ module Rrant
       rant = pick_random
       return placeholder unless rant
 
-      rant.tap { |r| @store.touch(r['id']) }
+      rant.tap { |tapped| @store.touch(tapped['id']) }
     end
 
     # Public: Sets 'unseen' instance variable and returns self. With 'unseen'
@@ -38,7 +38,7 @@ module Rrant
     def pick_random
       return @store.entities.sample unless @unseen
 
-      @store.entities.reject { |rant| !rant['viewed_at'].nil? }.sample
+      @store.entities.reject { |rant| rant['viewed_at'] }.sample
     end
 
     def placeholder

@@ -1,4 +1,5 @@
 module Rrant
+  # Public: Contains helper methods meant to be included in other Classes.
   module Helper
     def image_blank?(rant)
       rant['attached_image'].nil? || rant['attached_image'] == ''
